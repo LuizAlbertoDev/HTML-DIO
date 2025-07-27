@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark</title>
+</head>
+<body>
+
+    <input type="text" id="busca"><br>
+
+        <p id="descricao">
+        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letra
+        </p>
+
+    <script>
+        const searchField = document.getElementById('busca');
+        const descriptionObject = document.getElementById('descricao');
+        const originalText = descriptionObject.textContent;
+
+        function escapeRegExp(str) {
+            return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        function realizaBusca(busca) {
+            if (!busca.trim()) {
+                descriptionObject.innerHTML = originalText;
+            return;
+        }
+
+        const escaped = escapeRegExp(busca);
+        const regex = new RegExp(`(${escaped})`, 'gi');
+        const highlighted = originalText.replace(regex, '<mark>$1</mark>');
+        descriptionObject.innerHTML = highlighted;
+        }
+
+        searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+    </script>
+
+</body>
+</html>
