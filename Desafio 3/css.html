@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="/Desafio 3/style.css">
+    
+</head>
+<body>
+
+    <div>   
+        <div class="logo">
+            <img src="imagens/Wikipedia-logo-pt.png" width="100" title="Logo Wikipedia" alt="Imagem Wikipedia"/>
+        </div>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Programação</h2>
+            <ul>
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li><a href="javascript.htm">JavaScript</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1 id="introducao">Tudo sobre CSS</h1>
+
+            <div class="imagem-texto direita">
+                <img src="/Desafio 3/imagens/CSS3_logo_and_wordmark.svg.png" title="Logo CSS" alt="Logo CSS">
+            <div>
+                <p>
+                    Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar estilos (cores, fontes, espaçamento, etc.) a uma página web,[1] aplicado diretamente nas tags HTML ou ficar contido dentro das tags <code>&lt;style&gt;</code>. Também é possível adicionar estilos adicionando um link para um arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS, basta modificá-lo.
+                </p>
+
+            </div>
+            </div>
+            <p>Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos navegadores pode ser avaliada com o teste Acid2, que se tornou uma forma base de revelar quão eficiente é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox seja totalmente compatível a ele, assim como o Opera já é. O Doctype informado, ou a ausência dele, determina o quirks mode ou o strict mode, modificando o modo como o CSS é interpretado e a página desenhada.</p>
+
+            
+            <h2 id="Sintaxe">Sintaxe</h2>
+                <p>CSS tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de diferentes propriedade de estilo de uma página.</p>
+                <p>ma instrução CSS consiste em um seletor e um bloco de declaração. Cada declaração contém uma propriedade e um valor, separados por dois pontos (:). Cada declaração é separada por ponto e vírgula (;).[2]</p>
+                <p>Em CSS, seletores são usados para declarar a quais elementos de marcação um estilo se aplica, uma espécie de expressão correspondente. Os seletores podem ser aplicados a todos os elementos de um tipo específico, ou apenas aqueles elementos que correspondam a um determinado atributo; elementos podem ser combinados, dependendo de como eles são colocados em relação uns aos outros no código de marcação, ou como eles estão aninhados dentro do objeto de documento modelo</p>
+
+
+
+            <h2 id="Seletores">Seletores</h2>
+
+                <p>Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que fazem as definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de CSS num elemento style ou usando o elemento link apontando para um arquivo externo que contenha o bloco CSS.</p>
+                <p>Para uso com o CSS, foi criado o atributo class que todo elemento pode conter.</p>
+                <p>As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com um seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:</p>
+                <p><strong>elemento do tipo</strong> : element_name { style definition; }</p>
+                <p><strong>lemento do tipo com a classe</strong> : element_name.class_name { style definition; }</p>
+                <p><strong>todos os elementos com a classe</strong> : .class_name { style definition; }</p>
+                <p><strong>o elemento com o id</strong> : #id_of_element { style definition; }</p>
+                <p><strong>casamento de um grupo</strong> : element_name_01, element_name_02, .class_name { style definition; }</p>
+
+        </div>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#Sintaxe">Sintaxe</a></li>
+                <li><a href="#Seletores">Seletores</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+</html>
